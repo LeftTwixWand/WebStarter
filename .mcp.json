@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "codegraph": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@colbymchenry/codegraph", "serve", "--mcp"]
+    },
     "aspire": {
       "command": "aspire",
       "args": ["agent", "mcp"]

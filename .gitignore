@@ -399,3 +399,12 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# CodeGraph local index (SQLite graph + daemon state) - rebuilt automatically on build
+# See Directory.Build.targets for initialization. Matches setup from reference projects.
+.codegraph/
+!.codegraph/.gitignore
+
+# Build sentinels (local machine state only, recreated by build; safe to delete with git clean -fdx)
+.config/.codegraph-initialized
+.config/.tools-restored
